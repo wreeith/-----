@@ -29,6 +29,15 @@ def confidense_bootstrap(sample1, sample2, boot_iters = 1000):
         final_sample.append(mean1 - mean2)
     return np.percentile(final_sample, 2.5), np.percentile(final_sample, 97.5)
 ```
+Визуализация результатов
+
+> **Сравнение распределений в группах**
+> Здесь должен быть скриншот твоего Violinplot или Histplot.
+> ![Распределения групп](path/to/your/plot1.png)
+
+> **Анализ доверительного интервала (Bootstrap)**
+> Здесь скриншот распределения разностей с линиями CI.
+> ![Bootstrap CI](path/to/your/plot2.png)
 
 ## Результаты и выводы
 T-test: p-value = 0.78, что значительно выше уровня значимости 0.05. Статистически значимых различий между группами не обнаружено.
